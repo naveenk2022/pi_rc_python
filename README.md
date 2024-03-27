@@ -12,13 +12,18 @@ The following are the GPIO pin definitions for the L298N motor driver (assuming 
 
 **Motor 1**
 
-in1 = 22
-in2 = 27
-ena = 17
+IN1 = 22
+
+IN2 = 27
+
+EN-A = 17
 
 **Motor 2**
-in3 = 13
-in4 = 19
-enb = 26
+
+IN3 = 13
+
+IN4 = 19
+
+EN-B = 26
 
 
