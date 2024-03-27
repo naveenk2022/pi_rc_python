@@ -54,7 +54,7 @@ print("\n")
 while(1):
 
     x=input()
-    
+   # The default RUN state 
     if x=='r':
         print("Running......Moving FORWARD at speed LOW")
         if(temp1==1):
@@ -76,7 +76,7 @@ while(1):
          print("Moving BACKWARDS.....")
          x='z'
 
-
+    # The STOP command
     elif x=='s':
         print("STOPPING all motors.....")
         # Stopping Motor 1
@@ -86,7 +86,7 @@ while(1):
         GPIO.output(in3,GPIO.LOW)
         GPIO.output(in4, GPIO.LOW)
         x='z'
-
+    # The FORWARD command
     elif x=='f':
         print("Moving FORWARD.....")
         # Running Motor 1
@@ -97,7 +97,7 @@ while(1):
         GPIO.output(in4,GPIO.LOW)
         temp1=1
         x='z'
-
+    # The BACKWARDS command
     elif x=='b':
         print("Moving BACKWARDS.....")
         # Reversing Motor 1
@@ -108,7 +108,7 @@ while(1):
         GPIO.output(in4, GPIO.HIGH)
         temp1=0
         x='z'
-
+    # Speed Changing commands
     elif x=='l':
         print("Changing speed to LOW.....")
         p.ChangeDutyCycle(25)
