@@ -38,7 +38,7 @@ q.start(25)
 
 ## Setting up a TCP connection
 tcp1 = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
-tcp_ip = "" # Insert your server's IP address here
+tcp_ip = "192.168.0.147"
 port = 9000
 buffer_size = 1024
 
@@ -54,36 +54,51 @@ while True:
         tcp1.close()
         break 
     print("Data received from server:", data)  # Print response from server
-    if data=='r':
-        print("Running......Moving FORWARD at speed LOW")
-        if(temp1==1):
+   # The FORWARD command
+    if data=='w':
          # Running Motor 1
          GPIO.output(in1,GPIO.HIGH)
          GPIO.output(in2,GPIO.LOW)
          # Running Motor 2
          GPIO.output(in3,GPIO.HIGH)
          GPIO.output(in4,GPIO.LOW)
-         print("Moving FORWARD.....")
-         x='z'
-        else:
-         # Running Motor 1
-         GPIO.output(in1,GPIO.LOW)
-         GPIO.output(in2,GPIO.HIGH)
-         # Running Motor 2
-         GPIO.output(in3,GPIO.LOW)
-         GPIO.output(in4,GPIO.HIGH)
-         print("Moving BACKWARDS.....")
-         x='z'
 
+    # The REVERSE command
+    if data=="s":
+        GPIO.output(in1,GPIO.LOW)
+        GPIO.output(in2,GPIO.HIGH)
+        # Reversing Motor 2
+        GPIO.output(in3, GPIO.LOW)
+        GPIO.output(in4, GPIO.HIGH)
     # The STOP command
-    elif data=='s':
-        print("STOPPING all motors.....")
+    elif data=='stop':
         # Stopping Motor 1
         GPIO.output(in1,GPIO.LOW)
         GPIO.output(in2,GPIO.LOW)
         # Stopping Motor 2
         GPIO.output(in3,GPIO.LOW)
         GPIO.output(in4, GPIO.LOW)
-        x='z'
-    elif data=='e':
+    # The LEFT command
+    elif data=='a':
+        # Running Motor 1
+        GPIO.output(in1,GPIO.LOW)
+        GPIO.output(in2,GPIO.HIGH)
+        # Running Motor 2
+        GPIO.output(in3,GPIO.HIGH)
+        GPIO.output(in4,GPIO.LOW)
+    # The RIGHT command
+    elif data=='d':
+        GPIO.output(in1,GPIO.HIGH)
+        GPIO.output(in2,GPIO.LOW)
+        # Running Motor 2
+        GPIO.output(in3,GPIO.LOW)
+        GPIO.output(in4,GPIO.HIGH) 
+    # Speed HIGH
+    elif data=='h':
+        p.ChangeDutyCycle(75)
+        q.ChangeDutyCycle(75)
+    # The EXIT command
+    elif data=='exit':
         GPIO.cleanup()
+        break
+GPIO.cleanup()
