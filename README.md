@@ -32,27 +32,42 @@ Before you start wiring, make sure you're familiar with the GPIO pinout configur
 
 ![The GPIO pinout diagram of a Pi Zero 2 W.](images/zero2_pinout.png)
 
+Also be familiar with the components of the L289N motor driver module. 
+
+![](images/l298n_schematic.png)
+
 The following are the connections you will need to make between your different components. 
 
+## GPIO Pin definitions
 
-# GPIO Pin definitions
-
-The following are the GPIO pin definitions for the L298N motor driver.
+### Pi to L298N connections
 
 **Motor Set 1**
 
-IN1 = 22
+These connections will let you control the motors connected to OUT1 and OUT2.
 
-IN2 = 27
+IN1 to GPIO 22
 
-EN-A = 17
+IN2 to GPIO 27
+
+EN-A to GPIO 17
 
 **Motor Set 2**
 
-IN3 = 13
+These connections will let you control the motors connected to OUT3 and OUT4.
 
-IN4 = 19
+IN3 to GPIO 13
 
-EN-B = 26
+IN4 to GPIO 19
 
+EN-B to GPIO 26
 
+**Power Supply**
+
+L298N +5V to Pi 5V
+
+L298N GND to Pi GND
+
+12V battery Negative (-) Terminal to Pi GND
+
+12V battery Positive (+) to L298N +12V
