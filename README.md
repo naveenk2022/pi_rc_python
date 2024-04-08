@@ -26,11 +26,20 @@ This repository contains a guide to creating a "remote-controlled" car/buggy usi
 
 Remember, you will probably need to do some soldering, so consider getting a decent soldering tool kit.
 
-# Pin definitions
+# Wiring your RC car
 
-The following are the GPIO pin definitions for the L298N motor driver (assuming 2 motors are being powered):
+Before you start wiring, make sure you're familiar with the GPIO pinout configuration of your Raspberry Pi.
 
-**Motor 1**
+![The GPIO pinout diagram of a Pi Zero 2 W.](images/zero2_pinout.png)
+
+The following are the connections you will need to make between your different components. 
+
+
+# GPIO Pin definitions
+
+The following are the GPIO pin definitions for the L298N motor driver.
+
+**Motor Set 1**
 
 IN1 = 22
 
@@ -38,7 +47,7 @@ IN2 = 27
 
 EN-A = 17
 
-**Motor 2**
+**Motor Set 2**
 
 IN3 = 13
 
