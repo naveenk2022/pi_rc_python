@@ -5,8 +5,14 @@ This repository contains a guide to creating a "remote-controlled" car/buggy usi
 # Components
 
 - Raspberry Pi - Zero 2 W, along with a microSD card to flash the OS onto, along with **GPIO headers** soldered on to it.
+
+![](images/zero2-close-up.JPG)
+
 - A power bank capable of providing 5V DC 2.5A power output.
 - L298N DC Motor Controller Module.
+
+![](images/l298n_module.JPG)
+
 - Four (4) 3-6V DC Motor.
 - A rechargabale 12V 5200mAh battery/power supply.
 - RC Car board to wire the motors/components to.
@@ -14,8 +20,6 @@ This repository contains a guide to creating a "remote-controlled" car/buggy usi
 The motors are connected to the Pi via an L298N motor driver, through GPIO headers that were soldered on. 
 
 With a 12V DC power supply, each L298N motor driver can power and communicate with 4 DC motors. 
-
-![](images/l298n_module.JPG)
 
 # Pin definitions
 
