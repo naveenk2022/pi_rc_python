@@ -9,13 +9,22 @@ This repository contains a guide to creating a "remote-controlled" car/buggy usi
 ![](images/zero2-close-up.png)
 
 - A power bank capable of providing 5V DC 2.5A power output.
+
 - L298N DC Motor Controller Module.
 
 ![](images/l298n_module_crop.JPG)
 
-- Four (4) 3-6V DC Motors.
+- Four (4) 3-6V DC Motors (with soldered wires).
+
+![](images/dc_motor.webp)
+
 - A rechargabale 12V 5200mAh battery/power supply.
+
+- Male to Male/ Male to Female/ Female to Female Dupont Wires.
+
 - RC Car board to wire the motors/components to. 
+
+Remember, you will probably need to do some soldering, so consider getting a decent soldering tool kit.
 
 # Pin definitions
 
