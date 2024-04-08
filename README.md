@@ -38,9 +38,7 @@ Also be familiar with the components of the L289N motor driver module.
 
 The following are the connections you will need to make between your different components. 
 
-## GPIO Pin definitions
-
-### Pi to L298N connections
+## Connection Definitions
 
 **Motor Set 1**
 
@@ -63,6 +61,8 @@ IN4 to GPIO 19
 EN-B to GPIO 26
 
 **Power Supply**
+
+These connections will enable proper power supply.
 
 L298N +5V to Pi 5V
 
