@@ -15,7 +15,7 @@ The motors are connected to the Pi via an L298N motor driver, through GPIO heade
 
 With a 12V DC power supply, each L298N motor driver can power and communicate with 4 DC motors. 
 
-![images/l298n_module.jpg]
+![](images/l298n_module.jpg)
 
 # Pin definitions
 
