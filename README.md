@@ -13,9 +13,9 @@ This repository contains a guide to creating a "remote-controlled" car/buggy usi
 
 The motors are connected to the Pi via an L298N motor driver, through GPIO headers that were soldered on. 
 
-With a 12V DC power supply, each L298N motor driver can power and communicate with 2 DC motors. 
+With a 12V DC power supply, each L298N motor driver can power and communicate with 4 DC motors. 
 
-
+![images/l298n_module.jpg]
 
 # Pin definitions
 
