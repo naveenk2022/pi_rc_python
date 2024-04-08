@@ -71,3 +71,5 @@ L298N GND to Pi GND
 12V battery Negative (-) Terminal to Pi GND
 
 12V battery Positive (+) to L298N +12V
+
+I used this YouTube video as a guide: https://www.youtube.com/watch?v=m8r8prXrcgw&t=115s
