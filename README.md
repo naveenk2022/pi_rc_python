@@ -6,7 +6,7 @@ This repository contains a guide to creating a "remote-controlled" car/buggy usi
 
 - Raspberry Pi - Zero 2 W, along with a microSD card to flash the OS onto, along with **GPIO headers** soldered on to it.
 
-![](images/zero2-close-up.JPG)
+![](images/zero2-close-up.png)
 
 - A power bank capable of providing 5V DC 2.5A power output.
 - L298N DC Motor Controller Module.
