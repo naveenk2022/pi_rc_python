@@ -1,15 +1,15 @@
 # Introduction
 
-This repository contains python scripts to operate the Pi RC car v1.0, a rudimentary implementation of a remotely controlled "RC" car, running on a single Raspberry Pi Zero 2 W.
+This repository contains a guide to creating a "remote-controlled" car/buggy using a Raspberry Pi Zero 2 W, along with the Python scripts used to operate the car over SSH. 
 
 # Components
 
-- Raspberry Pi - Zero 2 W
-- A power bank capable of up to 3A of power output
-- L298N DC Motor Controller Module
-- Four (4) 3-6V DC Motor
-- A rechargabale 12V 5200mAh battery/power supply
-- RC Car board to wire the motors/components to
+- Raspberry Pi - Zero 2 W, along with a microSD card to flash the OS onto, along with **GPIO headers** soldered on to it.
+- A power bank capable of up to 3A of power output.
+- L298N DC Motor Controller Module.
+- Four (4) 3-6V DC Motor.
+- A rechargabale 12V 5200mAh battery/power supply.
+- RC Car board to wire the motors/components to.
 
 The motors are connected to the Pi via an L298N motor driver, through GPIO headers that were soldered on. 
 
