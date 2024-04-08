@@ -13,13 +13,9 @@ This repository contains a guide to creating a "remote-controlled" car/buggy usi
 
 ![](images/l298n_module_crop.JPG)
 
-- Four (4) 3-6V DC Motor.
+- Four (4) 3-6V DC Motors.
 - A rechargabale 12V 5200mAh battery/power supply.
-- RC Car board to wire the motors/components to.
-
-The motors are connected to the Pi via an L298N motor driver, through GPIO headers that were soldered on. 
-
-With a 12V DC power supply, each L298N motor driver can power and communicate with 4 DC motors. 
+- RC Car board to wire the motors/components to. 
 
 # Pin definitions
 
