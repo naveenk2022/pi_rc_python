@@ -40,6 +40,8 @@ The following are the connections you will need to make between your different c
 
 ## Connection Definitions
 
+![The Fritzing Diagram](images/l298n_pi_zero2W.png)
+
 **Motor Set 1**
 
 These connections will let you control the motors connected to OUT1 and OUT2.
