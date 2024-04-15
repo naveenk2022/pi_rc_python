@@ -18,7 +18,7 @@ This repository contains a guide to creating a "remote-controlled" car/buggy usi
 
 ![](images/dc_motor.webp)
 
-- A rechargabale 12V 5200mAh battery/power supply.
+- A rechargeable DC battery, with **9-12.6V/1A output and a capacity of 1200mAh 13.3Wh.**
 
 - Male to Male/ Male to Female/ Female to Female Dupont Wires.
 
